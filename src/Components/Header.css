@@ -1,0 +1,12 @@
+
+    .nav {
+        @apply relative cursor-pointer text-gray-600 font-semibold hover:text-yellow-400  ;
+      }
+      .nav::after {
+        @apply content-[''] absolute bg-yellow-300 h-[3px] w-[0%] left-0 -bottom-[7px] rounded-xl duration-300;
+      }
+      .nav:hover::after {
+        @apply w-[100%];
+      }
+      
+
